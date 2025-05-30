@@ -135,11 +135,31 @@ body {
 }
 
 section.banner {
-    background-image: url(../images/galaxy.png);
+    background-image: url('./static/images/galaxy.png');
     color: #aaa;
     background-position: center top;
     background-size: cover;
     background-attachment: scroll;
+    background-repeat: no-repeat;
+    min-height: 300px; /* 添加最小高度确保可见 */
+    width: 100%;
+    position: relative;
+}
+
+/* 确保父元素没有限制高度 */
+.hero.is-fullheight .hero-body {
+    align-items: normal;
+}
+
+/* 如果使用 Bulma 框架，添加这些样式 */
+.hero {
+    position: relative;
+}
+
+/* 备用背景颜色，当图片加载失败时显示 */
+section.banner {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
 
 .publication-title {
