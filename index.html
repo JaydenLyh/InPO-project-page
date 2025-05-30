@@ -5,7 +5,7 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:title" content="InPO: Inversion Preference Optimization with Reparametrized DDIM for Efficient Diffusion Model Alignment"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>InPO: Inversion Preference Optimization with Reparametrized DDIM for Efficient Diffusion Model Alignment</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -148,7 +148,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Without using explicit reward, direct preference optimization (DPO) employs paired human preference data to fine-tune generative models, a method that has garnered considerable attention in large language models (LLMs). 
+            However, exploration of aligning text-to-image (T2I) diffusion models with human preferences remains limited. In comparison to supervised fine-tuning, existing methods that align diffusion model suffer from low training efficiency and subpar generation quality due to the long Markov chain process and the intractability of the reverse process. 
+            To address these limitations, we introduce DDIM-InPO, an efficient method for direct preference alignment of diffusion models. 
+            Our approach conceptualizes diffusion model as a single-step generative model, allowing us to fine-tune the outputs of specific latent variables selectively. 
+            In order to accomplish this objective, we first assign implicit rewards to any latent variable directly via a reparameterization technique. 
+            Then we construct an Inversion technique to estimate appropriate latent variables for preference optimization. This modification process enables the diffusion model to only fine-tune the outputs of latent variables that have a strong correlation with the preference dataset. 
+            Experimental results indicate that our DDIM-InPO achieves state-of-the-art performance with just 400 steps of fine-tuning, surpassing all preference aligning baselines for T2I diffusion models in human preference evaluation tasks.
           </p>
         </div>
       </div>
