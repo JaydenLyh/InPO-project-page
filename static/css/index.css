@@ -136,7 +136,7 @@ body {
 .banner {
   background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../images/banner_2.png') no-repeat center center;
+    url('../images/galaxy.png') no-repeat center center;
   background-size: cover;
   min-height: 30vh;
   color: white; /* 文字改为白色 */
