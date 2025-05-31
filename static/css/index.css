@@ -71,12 +71,11 @@ body {
 }
 
 .publication-authors a {
-   color: #aaa !important;
-   text-decoration: underline;
+   color: hsl(204, 86%, 53%) !important;
 }
 
 .publication-authors a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .author-block {
@@ -134,26 +133,12 @@ body {
   font-size: smaller;
 }
 
-section.banner {
-    background-image: url(../images/galaxy.png);
-    color: #aaa;
-    background-position: center top;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-.publication-title {
-    color: #fff;
-}
-
-.card-image.js-modal-trigger {
-    cursor: pointer;
-}
-.results-carousel .card {
-    margin: 20px;
-    overflow: hidden;
-}
-
-.column .card {
-    height: 100%;
+.banner {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/banner_2.png') no-repeat center center;
+  background-size: cover;
+  min-height: 30vh;
+  color: white; /* 文字改为白色 */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* 增加文字阴影 */
 }
